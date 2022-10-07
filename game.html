@@ -340,6 +340,7 @@ button.addEventListener("click", onClick);
 
 function onClick() {
   console.log("Clicked");
+  setTimeout(3000);
   button.removeEventListener("click", onClick);
 }
 
