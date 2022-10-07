@@ -58,7 +58,7 @@
   </thead>
   <tbody>
     <tr>
-      <td><button type="button" id="f1" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#f1">
+      <td><button type="button" id="f1" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#f1" onclick="setTimeout(f1, 3000);">
   100
 </button></td>
 <td><button type="button" id="f2" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#v1">
@@ -330,7 +330,7 @@ function onClick() {
 var button = document.getElementById("f3");
 button.addEventListener("click", onClick);
 
-function onClick() {
+function v1 onClick() {
   console.log("Clicked");
   button.removeEventListener("click", onClick);
 }
