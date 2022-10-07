@@ -314,9 +314,9 @@ $('[rel="popover"]').popover().click(function(e) {
 var button = document.getElementById("f1");
 button.addEventListener("click", onClick);
 
-function f1 onClick() {
+function onClick() {
   console.log("Clicked");
-  button.removeEventListener("click", onClick);
+  document.getElementById("f1").style.color = "#060CE9";
 }
 
 var button = document.getElementById("f2");
