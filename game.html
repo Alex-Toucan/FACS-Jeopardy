@@ -42,15 +42,6 @@
         color: #FFA500;
       }
     </style>
-    <script>
-      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-        return new bootstrap.Popover(popoverTriggerEl)
-      })
-      $(document).ready(function(){
-      $('[data-bs-toggle="popover"]').popover();  
-     });
-    </script>
   </head>
   <body>
   <div id="page">
@@ -155,6 +146,12 @@
  </div>
     </div>
   </div>
+  <script>
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
+</script>
     </body>
     </html>
 
