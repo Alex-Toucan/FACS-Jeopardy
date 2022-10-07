@@ -32,6 +32,14 @@
       $('[data-bs-toggle="popover"]').popover();  
       });
     </script>
+    <script>
+      $(document).ready(function(){
+      $("#popTop").popover({placement : "top"});
+      $("#popRight").popover({placement : "right"});
+      $("#popBottom").popover({placement : "bottom"});
+      $("#popLeft").popover({ placement : "left"});
+      });
+    </script>
     <style>
       body {
         background-color: #060CE9;
